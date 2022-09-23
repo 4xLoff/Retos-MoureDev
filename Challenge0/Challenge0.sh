@@ -13,18 +13,18 @@
 Comment
 
 function fizz_buzz {
-  
-  for number in $(seq 1 100); do
-      if [[ $((number%3 )) == 0 && $((number%5)) == 0 ]]; then
-          echo "fizzbuzz"
-      elif [[ $((number%3)) -eq 0 ]]; then
-          echo "fizz"
-      elif [[ $((number%5)) == 0 ]]; then
-          echo  "buzz"
-      else
-          echo "$number"
-      fi
-  done
-}
 
+   for number in $(seq 1 100); do
+        if [[ $((number%3 )) == 0 && $((number%5)) == 0 ]]; then
+            echo "$number fizzbuzz"
+        elif [[ $((number%3)) -eq 0 ]]; then
+            echo "$number es fizz"
+        elif [[ $((number%5)) == 0 ]]; then
+            echo "$number buzz"
+        else
+            echo "$number"
+        fi
+    done
+  }
+  
 fizz_buzz

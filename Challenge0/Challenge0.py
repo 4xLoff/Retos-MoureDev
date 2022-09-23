@@ -12,15 +12,13 @@
 
 def fizzbuzz():
   for i in range (1, 101):
-      mult3 = i % 3 == 0 
-      mult5 = i % 5 == 0 
-      if mult3 and mult5: 
-          print ("fizzbuzz")
-      elif mult3: 
-          print("fizz")
-      elif mult5: 
-          print("buzz")
+      if i % 3 == 0 and i % 3 == 0: 
+          print(f"{i} es fizzbuzz")
+      elif i % 3 == 0: 
+          print(f"{i} es fizz")
+      elif i % 3 == 0: 
+          print(f"{i} es buzz")
       else: 
-          print(i)
-
+          print(i)  
+            
 fizzbuzz()

@@ -10,29 +10,25 @@
  * - Múltiplos de 5 por la palabra "buzz".
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
-
-function fizzbuzz() {
-    var mult3, mult5;
-  
-    for (var i = 1, _pj_a = 101; i < _pj_a; i += 1) {
-      mult3 = i % 3 === 0;
-      mult5 = i % 5 === 0;
-  
-      if (mult3 && mult5) {
-        console.log("fizzbuzz");
-      } else {
-        if (mult3) {
-          console.log("fizz");
+    
+    function fizzbuzz() {
+      for (var i = 1; i < 101; i += 1) {
+        if (i % 3 === 0 && i % 3 === 0) {
+          console.log(`${i} es fizzbuzz`);
         } else {
-          if (mult5) {
-            console.log("buzz");
+          if (i % 3 === 0) {
+            console.log(`${i} es fizz`);
           } else {
-            console.log(i);
+            if (i % 3 === 0) {
+              console.log(`${i} es buzz`);
+            } else {
+              console.log(i);
+            }
           }
         }
       }
     }
-  }
-  
-  fizzbuzz();
-  
+    
+    fizzbuzz();
+
+    
