@@ -1,6 +1,4 @@
-#! /usr/bin/bash
-
-<< 'Comment'
+'''
  * Reto #0
  * EL FAMOSO "FIZZ BUZZ"
  * Fecha publicación enunciado: 27/12/21
@@ -10,21 +8,17 @@
  * - Múltiplos de 3 por la palabra "fizz".
  * - Múltiplos de 5 por la palabra "buzz".
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
-Comment
+ '''
 
-function fizz_buzz {
-
-   for number in $(seq 1 100); do
-        if [[ $((number%3 )) == 0 && $((number%5)) == 0 ]]; then
-            echo "$number fizzbuzz"
-        elif [[ $((number%3)) -eq 0 ]]; then
-            echo "$number es fizz"
-        elif [[ $((number%5)) == 0 ]]; then
-            echo "$number buzz"
-        else
-            echo "$number"
-        fi
-    done
-  }
-  
-fizz_buzz
+def fizzbuzz():
+  for i in range (1, 101):
+      if i % 3 == 0 and i % 5 == 0: 
+          print(f"{i} es fizzbuzz")
+      elif i % 3 == 0: 
+          print(f"{i} es fizz")
+      elif i % 5 == 0: 
+          print(f"{i} es buzz")
+      else: 
+          print(i)  
+            
+fizzbuzz()

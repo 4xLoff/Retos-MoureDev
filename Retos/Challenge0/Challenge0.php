@@ -1,4 +1,4 @@
-
+<?php
 /*
  * Reto #0
  * EL FAMOSO "FIZZ BUZZ"
@@ -10,25 +10,20 @@
  * - Múltiplos de 5 por la palabra "buzz".
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
-    
-    function fizzbuzz() {
-      for (var i = 1; i < 101; i += 1) {
-        if (i % 3 === 0 && i % 3 === 0) {
-          console.log(`${i} es fizzbuzz`);
-        } else {
-          if (i % 3 === 0) {
-            console.log(`${i} es fizz`);
-          } else {
-            if (i % 3 === 0) {
-              console.log(`${i} es buzz`);
-            } else {
-              console.log(i);
-            }
-          }
-        }
-      }
-    }
-    
-    fizzbuzz();
 
-    
+function fizz_buzz(){
+  for ($x = 1; $x <= 100; $x++) {
+    if ($x % 3 == 0 && $x % 5 == 0) {
+      echo "$x es fizzbuzz <br>";
+    } else if ($x % 3 == 0) {
+      echo "$x es fizz <br>";
+    } else if ($x % 5 == 0) {
+      echo "$x es buzz <br>";
+    } else {
+      echo "$x <br>" ;
+    }
+
+  }
+}
+fizz_buzz();
+?> 
