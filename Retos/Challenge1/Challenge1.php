@@ -11,4 +11,34 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
+$palabra1 = readline("ingrse la primera palabra: ");
+$palabra2 = readline("ingrse la segunda palabra: ");
+$coincidencias = 0;
+
+if (strlen($palabra1) == strlen($palabra2)) {
+    $numpal = strlen($palabra1);
+
+    for ($i=0; $i < $numpal; $i++) {
+        $letra = $palabra1[$i];
+        for ($j=0; $j < $numpal; $j++) {
+            if ($letra == $palabra2[$j]) {
+                $coincidencias++;
+            }
+        }
+    }
+
+    if ($coincidencias == $numpal) {
+        echo "es un anagrama";
+    }else {
+        echo "no es un anagrama";
+    }
+
+}else {
+    echo "no es un angrama";
+}
+
+
+
+
+
 ?> 

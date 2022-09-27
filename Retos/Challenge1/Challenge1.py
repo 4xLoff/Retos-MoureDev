@@ -16,16 +16,19 @@ primeraPalabra = input("Ingresa primera palabra: ").lower()
 segundaPalabra = input("Ingresa segunda palabra: ").lower()
 
 def anagrama (primeraPalabra,segundaPalabra):
-
+    #Convertir ambas cadenas en un arreglo
     lista1 = (list(primeraPalabra))
     lista2 = (list(segundaPalabra))
-
+    
+    #Ordenar ese arreglo
     lista1.sort()
     lista2.sort()
     
+    #Una vez ordenados, los convertimos a cadena nuevamente
     pPalabra = "".join(lista1)
     sPalabra = "".join(lista2)
 
+    #Finalmente comparamos
     if pPalabra == sPalabra:
         print (f"[+] Las palabras {primeraPalabra} y {segundaPalabra} son un anagrama \n")
     else:
