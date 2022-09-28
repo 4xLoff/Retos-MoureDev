@@ -13,11 +13,10 @@
 Comment
 
 read -p "¿Cuál debería ser el límite de la serie de Fibonacci?: " n
-a=0
-b=1
 
 function fibonacci() {
-
+a=0
+b=1
 for (( i = 0; i < n; i++ )); do
     echo -n "$a "
     fib=$(($a+$b))
@@ -25,5 +24,5 @@ for (( i = 0; i < n; i++ )); do
     a=$fib
 done
 }
-
+fibonacci
 
